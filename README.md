@@ -1,6 +1,6 @@
 # Find Name and Attach URL
-This is a script I wrote to find and replace employee names and attach a URL using Google Apps Script.
 
+This is a script I wrote to find and replace employee names and attach a URL using Google Apps Script.
 
 ```javascript
 
@@ -12,7 +12,7 @@ const list = [
 ];
 
 
-function changeTextWithUrl() {
+function replaceTextWithUrl() {
   for (let i in list) {
     let searchText = list[i].name;
     let replaceText = list[i].name;
@@ -35,8 +35,8 @@ function changeTextWithUrl() {
         startIndex + replaceText.length - 1,
         replaceUrl
       );
-    }
-  }
-}
+    };
+  };
+};
 
 ```
